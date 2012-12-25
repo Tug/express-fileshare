@@ -1,0 +1,95 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page-header {
+    padding-left: 40px;
+}
+
+.page-content {
+    margin: 0 0 80px 40px;
+}
+
+.home-container {
+    width: 700px;
+    margin: auto;
+}
+
+#fileList {
+    margin: 15px 0 0 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+
+.fileitem {
+    margin: 0 0 9px 0;
+    padding: 0;
+    font-size: small;
+    display: block;
+    float: left;
+    left: 0;
+    list-style: none;
+}
+
+.fileitem > li {
+    float: left;
+    padding-left: 5px;
+}
+
+.filenamefield {
+    max-width: 360px;
+    overflow-x: hidden;
+}
+
+.filestatusfield {
+    /*width: 30%;
+    text-align: center;*/
+}
+
+
+#infoblock {
+    width: 250px;
+    margin: 2px 0 0 250px;
+    font-size: small;
+}
+
+#uploadSpeed {
+    display: inline;
+    margin-left: 5px;
+    margin-top: 0;
+    padding: 0;
+    font-size: small;
+}
+
+.qq-upload-list {
+    text-align: left;
+    margin: 0 0 0 2px;
+    list-style: none;
+}
+
+li.alert-success {
+    background-color: #DFF0D8;
+}
+
+li.alert-error {
+    background-color: #F2DEDE;
+}
+
+.alert-error .qq-upload-failed-text {
+    display: inline;
+}
+
+.uplaod-info {
+    font-size: 80%;
+    display: inline;
+    margin: 0 0 0 5px;
+}
+
+.urlInput {
+    width: 60%;
+}

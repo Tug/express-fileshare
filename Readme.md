@@ -1,18 +1,17 @@
 
-# Express-chat
+# Express-fileshare
 
-Express chat is a node.js multi-server chat application with file exchange capabilities.
-Messages are sent with Socket-IO and saved in MongoDB.
-Users can stream files in MongoDB/GridFS directly!
-
+Express fileshare is a node.js file sharing application.
+File stream is available for everyone to download as soon as the upload starts.
+Files are stored in MongoDB/GridFS.
 
 ## Requirements
 * Node.js >= v0.6.2
 * MongoDB and Redis installed and running.
 
 ## Installation
-* git clone git://github.com/Tug/express-chat.git
-* cd express-chat
+* git clone git://github.com/Tug/express-fileserver.git
+* cd express-fileserver
 * npm install .
 
 ## Configuring
@@ -23,11 +22,3 @@ The config.json file will overwrite properties definied in config.js. Edit it to
 * node app
 or
 * node app myconfig.js
-
-
-## TODO
-* fix bugs with plupload :  html5 runtime errors with multiple files, http error content not displayed, max upload file size not detected with some runtimes...
-* Load test
-* Script deployment
-* improve UI : use backbone and mix client and server views, announce new message, add connecting...
-* Set a minimum delay per client for uploads and messages

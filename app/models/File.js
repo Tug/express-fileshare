@@ -8,7 +8,6 @@ module.exports = function(app, model) {
     var File = new mongoose.Schema({
           servername      : { type: String, index: { unique: true } }
         , uploaderip      : String
-        , uploadername    : String
         , originalname    : String
         , status          : { type: String, enum: ['Uploading','Available','Stopped','Removed'], default: 'Uploading' }
         , size            : Number

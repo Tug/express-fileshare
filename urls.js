@@ -7,17 +7,14 @@ module.exports = function(app) {
     
     return {
         urls : [
-            ["/",                               "index.index",          "get"  ],
-            ["/rooms/create",                   "index.createRoom",     "post" , express.bodyParser()],
-            ["/r/:roomid",                      "chat.index",           "get"  ],
-            ["/r/:roomid/upload",               "file.upload",          "post" , [upm.upload, "session.load"],
-                                                                                 [upm.errorHandler] ],
-            ["/r/:roomid/download/:fileid",     "file.download",        "get"  ],
+            ["/",                     "index.index",          "get"  ],
+            ["/upload",               "file.upload",          "post" , [upm.upload, "session.load"],
+                                                                       [upm.errorHandler] ],
+            ["/download/:servername/:filename","file.download","get"  ],
         ]
         
       , ios : [
-            ["/chat",                           "chat.socket",          "io"   ],
-            ["/file",                           "file.socket",          "io"   ],
+            ["/file",                 "file.socket",          "io"   ],
         ]
     };
 

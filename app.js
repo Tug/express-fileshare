@@ -1,6 +1,6 @@
 
 var fs          = require('fs')
-  , debug       = require('debug')('express-chat')
+  , debug       = require('debug')('express-fileshare')
   , configFile  = process.argv.slice(2)[0] || './config.json'
   , userconfig  = JSON.parse(fs.readFileSync(configFile, 'utf8'))
   , autoload    = require('express-autoload');
