@@ -14,7 +14,7 @@ module.exports = function(app) {
         ]
         
       , ios : [
-            ["/file",                 "file.socket",          "io"   ],
+            ["/file",                 "file.socket",          "on.connection"   ],
         ]
     };
 

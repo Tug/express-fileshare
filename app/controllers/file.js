@@ -138,7 +138,7 @@ module.exports = function(app, model) {
         var filenameRequested = req.params.filename;
         
         if(typeof servername !== "string" || servername.length > 16) {
-            error('Invalid file ID');
+            error(new Error('Invalid file ID'));
             return;
         }
         
@@ -165,7 +165,7 @@ module.exports = function(app, model) {
                 if(err) throw err;
                 
                 var nextstep = this;
-                GrowingFile.open(app.libs.mongodb, db, servername, null, function(err, gf) {
+                GrowingFile.open(app.libs.mongoose.mongo, model.mongoose.db, servername, null, function(err, gf) {
 	                if(err || !gf) {
 	                    error(err || new Error('GrowingFile not found'));
 	                    return;
