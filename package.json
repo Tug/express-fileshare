@@ -12,7 +12,7 @@
     "socket-io"
   ],
   "dependencies": {
-    "express-autoload": "0.1.10",
+    "express-autoload": "0.1.11",
     "upload-middleware" : "0.2.3",
     "growing-mongofile" : "0.1.8",
     "debug": "0.7.0",
